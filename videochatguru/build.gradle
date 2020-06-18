@@ -30,20 +30,24 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
-    buildToolsVersion '28.0.3'
+    buildToolsVersion '29.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(dir: 'libs', include: ['*.jar'])
 
-    testCompile test.junit
-    testCompile test.mockito
-    testCompile(test.mockitoKotlin) {
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.mockito:mockito-core:3.3.3'
+    testImplementation('com.nhaarman:mockito-kotlin:1.6.0') {
         exclude group: 'org.jetbrains.kotlin'
     }
 
-    compile libs.kotlinStdlib
-    compile libs.webRTC
+    api "org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.71"
+    api libs.webRTC
 }
 repositories {
     mavenCentral()

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "99172255008",
+    "firebase_url": "https://chatroll-e3618.firebaseio.com",
+    "project_id": "chatroll-e3618",
+    "storage_bucket": "chatroll-e3618.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99172255008:android:2005331231ed6225694345",
+        "android_client_info": {
+          "package_name": "co.netguru.android.chatandroll.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99172255008-crm9g593ug8jdb488ub9lu3ekb9l8vkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMidZ42yTNOG1MsX3_Q4eIq1i17_a7YlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99172255008-crm9g593ug8jdb488ub9lu3ekb9l8vkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
